@@ -15,4 +15,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::resource('tasks', \App\Http\Controllers\TaskController::class);
  
